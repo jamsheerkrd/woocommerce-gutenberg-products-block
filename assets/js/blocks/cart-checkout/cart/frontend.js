@@ -8,7 +8,7 @@ import {
 import { __ } from '@wordpress/i18n';
 import { StoreNoticesProvider } from '@woocommerce/base-context';
 import { CURRENT_USER_IS_ADMIN } from '@woocommerce/settings';
-import { createInterpolateElement } from 'wordpress-element';
+import { createInterpolateElement } from '@wordpress/element';
 import {
 	renderFrontend,
 	getValidBlockAttributes,

@@ -13,7 +13,7 @@ import {
 } from '@woocommerce/base-context';
 import BlockErrorBoundary from '@woocommerce/base-components/block-error-boundary';
 import { CURRENT_USER_IS_ADMIN } from '@woocommerce/settings';
-import { createInterpolateElement } from 'wordpress-element';
+import { createInterpolateElement } from '@wordpress/element';
 import {
 	renderFrontend,
 	getValidBlockAttributes,

@@ -5,7 +5,7 @@ import { __ } from '@wordpress/i18n';
 import FormattedMonetaryAmount from '@woocommerce/base-components/formatted-monetary-amount';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import { createInterpolateElement } from 'wordpress-element';
+import { createInterpolateElement } from '@wordpress/element';
 
 /**
  * Internal dependencies
