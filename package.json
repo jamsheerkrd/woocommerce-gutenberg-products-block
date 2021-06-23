@@ -179,6 +179,7 @@
 	"dependencies": {
 		"@stripe/react-stripe-js": "1.4.1",
 		"@stripe/stripe-js": "1.15.1",
+		"@types/wordpress-components": "npm:@types/wordpress__components@9.8.6",
 		"@woocommerce/components": "6.2.0",
 		"@wordpress/autop": "2.9.0",
 		"@wordpress/deprecated": "2.9.0",
@@ -194,12 +195,12 @@
 		"downshift": "6.1.3",
 		"github-label-sync": "2.0.1",
 		"html-react-parser": "0.14.3",
+		"md5": "^2.3.0",
 		"react-number-format": "4.4.3",
 		"reakit": "1.3.8",
 		"trim-html": "0.1.9",
 		"use-debounce": "3.4.3",
 		"wordpress-components": "npm:@wordpress/components@11.1.5",
-		"@types/wordpress-components": "npm:@types/wordpress__components@9.8.6",
 		"wordpress-compose": "npm:@wordpress/compose@3.23.1",
 		"wordpress-element": "npm:@wordpress/element@2.18.0"
 	},
