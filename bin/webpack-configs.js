@@ -12,6 +12,7 @@ const chalk = require( 'chalk' );
 const { kebabCase } = require( 'lodash' );
 const CreateFileWebpack = require( 'create-file-webpack' );
 const CircularDependencyPlugin = require( 'circular-dependency-plugin' );
+const RequireChunkCallbackPlugin = require( './require-chunk-callback-plugin' );
 
 /**
  * Internal dependencies
@@ -40,6 +41,7 @@ const sharedPlugins = [
 		requestToExternal,
 		requestToHandle,
 	} ),
+	new RequireChunkCallbackPlugin(),
 ].filter( Boolean );
 
 const mainBlocksPlugins = [
