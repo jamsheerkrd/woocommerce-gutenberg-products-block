@@ -95,10 +95,6 @@ const getCoreConfig = ( options = {} ) => {
 			path: path.resolve( __dirname, '../build/' ),
 			library: [ 'wc', '[name]' ],
 			libraryTarget: 'this',
-			// This fixes an issue with multiple webpack projects using chunking
-			// overwriting each other's chunk loader function.
-			// See https://webpack.js.org/configuration/output/#outputjsonpfunction
-			jsonpFunction: 'webpackWcBlocksJsonp',
 		},
 		optimization: {
 			splitChunks: {
@@ -167,10 +163,6 @@ const getCoreEditorConfig = ( options = {} ) => {
 			path: path.resolve( __dirname, '../build/' ),
 			library: [ 'wc', '[name]' ],
 			libraryTarget: 'this',
-			// This fixes an issue with multiple webpack projects using chunking
-			// overwriting each other's chunk loader function.
-			// See https://webpack.js.org/configuration/output/#outputjsonpfunction
-			jsonpFunction: 'webpackWcBlocksJsonp',
 		},
 		plugins: [
 			...mainBlocksPlugins,
@@ -210,10 +202,6 @@ const getMainConfig = ( options = {} ) => {
 			filename: `[name]${ fileSuffix }.js`,
 			library: [ 'wc', 'blocks', '[name]' ],
 			libraryTarget: 'this',
-			// This fixes an issue with multiple webpack projects using chunking
-			// overwriting each other's chunk loader function.
-			// See https://webpack.js.org/configuration/output/#outputjsonpfunction
-			jsonpFunction: 'webpackWcBlocksJsonp',
 		},
 		optimization: {
 			splitChunks: {
@@ -290,10 +278,6 @@ const getFrontConfig = ( options = {} ) => {
 			devtoolNamespace: 'wc',
 			path: path.resolve( __dirname, '../build/' ),
 			filename: `[name]-frontend${ fileSuffix }.js`,
-			// This fixes an issue with multiple webpack projects using chunking
-			// overwriting each other's chunk loader function.
-			// See https://webpack.js.org/configuration/output/#outputjsonpfunction
-			jsonpFunction: 'webpackWcBlocksJsonp',
 		},
 		optimization: {
 			splitChunks: {
@@ -383,10 +367,6 @@ const getPaymentsConfig = ( options = {} ) => {
 			devtoolNamespace: 'wc',
 			path: path.resolve( __dirname, '../build/' ),
 			filename: `[name].js`,
-			// This fixes an issue with multiple webpack projects using chunking
-			// overwriting each other's chunk loader function.
-			// See https://webpack.js.org/configuration/output/#outputjsonpfunction
-			jsonpFunction: 'webpackWcBlocksPaymentMethodExtensionJsonp',
 		},
 		optimization: {
 			splitChunks: {
@@ -479,7 +459,6 @@ const getExtensionsConfig = ( options = {} ) => {
 			devtoolNamespace: 'wc',
 			path: path.resolve( __dirname, '../build/' ),
 			filename: `[name].js`,
-			jsonpFunction: 'webpackWcBlocksExtensionsMethodExtensionJsonp',
 		},
 		module: {
 			rules: [
@@ -565,10 +544,6 @@ const getStylingConfig = ( options = {} ) => {
 			filename: `[name]-style${ fileSuffix }.js`,
 			library: [ 'wc', 'blocks', '[name]' ],
 			libraryTarget: 'this',
-			// This fixes an issue with multiple webpack projects using chunking
-			// overwriting each other's chunk loader function.
-			// See https://webpack.js.org/configuration/output/#outputjsonpfunction
-			jsonpFunction: 'webpackWcBlocksJsonp',
 		},
 		optimization: {
 			splitChunks: {
