@@ -14,7 +14,7 @@ interface WcBlocksConfig {
 	productCount: number;
 	restApiRoutes: Record< string, string[] >;
 	wordCountType: WordCountType;
-	langDir: string;
+	languageUrl: string;
 	locale: string;
 }
 
@@ -24,7 +24,7 @@ export const blocksConfig = getSetting( 'wcBlocksConfig', {
 	productCount: 0,
 	restApiRoutes: {},
 	wordCountType: 'words',
-	langDir: '',
+	languageUrl: '',
 	locale: '',
 } ) as WcBlocksConfig;
 

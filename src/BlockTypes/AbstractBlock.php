@@ -349,7 +349,7 @@ abstract class AbstractBlock {
 						'/wc/store' => array_keys( Package::container()->get( RestApi::class )->get_routes_from_namespace( 'wc/store' ) ),
 					],
 					'locale'        => determine_locale(),
-					'langDir'       => str_replace( ABSPATH, site_url( '/' ), WP_LANG_DIR ) . '/plugins',
+					'languageUrl'   => str_replace( ABSPATH, site_url( '/' ), WP_LANG_DIR ) . '/plugins',
 
 					/*
 					 * translators: If your word count is based on single characters (e.g. East Asian characters),
