@@ -37,13 +37,13 @@ const ProductDetails = ( {
 					: '';
 				return (
 					<li
-						key={ detail.name + ( detail.display || detail.value ) }
+						key={ detail.key + ( detail.display || detail.value ) }
 						className={ className }
 					>
-						{ detail.name && (
+						{ (detail.key || detail.name ) && (
 							<>
 								<span className="wc-block-components-product-details__name">
-									{ decodeEntities( detail.name ) }:
+									{ decodeEntities( detail.key || detail.name ) }:
 								</span>{ ' ' }
 							</>
 						) }
